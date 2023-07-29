@@ -85,6 +85,7 @@ position: sticky;
 }
 .firstsection{
     height: 100vh;
+    padding-top: 10%;
 }
 
 .firsthalf{
@@ -132,6 +133,10 @@ font-family: 'Times New Roman', Times, serif;
 
 .secright{
     height: 500px;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 80%;
+    margin: auto;
     display: flex;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
    
@@ -230,3 +235,71 @@ justify-content: center;
 
 }
 
+.burger{
+    display: none;
+   position: absolute;
+   cursor: pointer;
+   right: 5%;
+   top: 15px;
+}
+.line{
+    width: 33px;
+    background-color: azure;
+    height: 4px;
+    margin: 5px 3px;
+}
+
+
+@media only screen and (max-width:1140 px){
+    .nav-list{
+        flex-direction: column;
+    }
+
+    .navbar{
+        height: 447px;
+        flex-direction: column;
+        transition: all 0.7s ease-out;
+    }
+
+    .box-main{
+        flex-direction: column-reverse;
+        max-width: 100%;
+    }
+    .rightNav{
+        text-align: center;
+    }
+    #search{
+        width: 100%;
+    }
+.burger{
+    display: block;
+}
+
+.h-nav-resp{
+    height: 72px;
+}
+
+.v-class-resp{
+    opacity: 0;
+}
+.text-small{
+    text-align: center;
+}
+
+.text-big{
+    text-align: center;
+}
+.btn{
+    text-align: center;
+}
+.section{
+    flex-direction: column-reverse;
+}
+.secright{
+    flex-direction: column-reverse;
+}
+.paras{
+    padding: 0px;
+}
+
+}

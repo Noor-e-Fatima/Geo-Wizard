@@ -4,6 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Style.css">
   <title>GeoWizard-Uncovering hidden truths</title>
  
@@ -11,11 +12,12 @@
   <script src="https://js.arcgis.com/4.19/"></script>
 
   <script src="Trial.js"></script>
+ 
 </head>
 
 <body class="B">
-  <nav class="navbar">
-    <ul class="nav-list ">
+  <nav class="navbar h-nav-resp">
+    <ul class="nav-list v-class-resp">
         <div class="logo"><img src="cardinal-points.png" alt="logo" height="200px"></div>
         <li> <a href="#home">Home</a> </li>
         <li> <a href="#about">About</a> </li>
@@ -28,8 +30,15 @@
         <button class="btn btn-sm">search</button>
     </div>
 
+<div class="burger">
+  <div class="line"></div>
+  <div class="line"></div>
+  <div class="line"></div>
+</div>
+
 </nav>
 <section class="background firstsection" >
+  <div class="section">
     <div class="box-main">
       <div class="firsthalf" id="home">
         <p class="text-big">The Future of Mapping </p>
@@ -107,6 +116,7 @@
     NOAA Data Access Viewer</p>
 
 </div>
+
 </section>
 
 
@@ -127,7 +137,7 @@
   <button id="toggleButton">Toggle Layer Visibility</button> <!-- Add toggle button element -->
 </section>
   
-
+<script src="js/resp.js"></script>
 </body>
 
 </html>
