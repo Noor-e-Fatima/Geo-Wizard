@@ -1,0 +1,3 @@
+[submodule "new_submodule"]
+	path = new_submodule
+	url = https://github.com/Noor-e-Fatima/Geo-Wizard.git
